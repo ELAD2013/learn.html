@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רמה 5 - נושאים מתקדמים</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>רמה 5 - נושאים מתקדמים</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">בית</a></li>
+                <li><a href="level1.html">רמה 1</a></li>
+                <li><a href="level2.html">רמה 2</a></li>
+                <li><a href="level3.html">רמה 3</a></li>
+                <li><a href="level4.html">רמה 4</a></li>
+                <li><a href="level5.html">רמה 5</a></li>
+                <li><a href="#" id="logout">התנתקות</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>נושאים מתקדמים ב-HTML</h2>
+        <p>כאן נלמד על נושאים מתקדמים יותר ב-HTML.</p>
+        <h3>HTML5 APIs</h3>
+        <p>HTML5 מציעה מספר APIs חדשים שניתן להשתמש בהם כדי לשפר את חוויית המשתמש:</p>
+        <ul>
+            <li><strong>Local Storage:</strong> מאפשר אחסון נתונים בצד הלקוח.</li>
+            <li><strong>Geolocation:</strong> מאפשר קבלת מיקום המשתמש.</li>
+            <li><strong>Canvas:</strong> מאפשר ציור גרפיקה דו-ממדית.</li>
+            <li><strong>Web Workers:</strong> מאפשר הרצת סקריפטים ברקע.</li>
+        </ul>
+        <h3>דוגמה לשימוש ב-Local Storage</h3>
+        <pre><code>localStorage.setItem('key', 'value');
+const value = localStorage.getItem('key');</code></pre>
+        <div class="explanation">
+            <p><strong>localStorage.setItem('key', 'value');</strong> - שומר נתון ב-Local Storage.</p>
+            <p><strong>localStorage.getItem('key');</strong> - מקבל נתון מ-Local Storage.</p>
+        </div>
+        <h3>דוגמה לשימוש ב-Geolocation</h3>
+        <pre><code>navigator.geolocation.getCurrentPosition((position) => {
+    console.log(position.coords.latitude, position.coords.longitude);
+});</code></pre>
+        <div class="explanation">
+            <p><strong>navigator.geolocation.getCurrentPosition(callback);</strong> - מקבל את מיקום המשתמש.</p>
+            <p><strong>callback</strong> - פונקציה שתופעל כאשר המיקום מתקבל.</p>
+            <p><strong>position.coords.latitude</strong> - קו רוחב של המיקום.</p>
+            <p><strong>position.coords.longitude</strong> - קו אורך של המיקום.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 לימוד HTML. כל הזכויות שמורות.</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
